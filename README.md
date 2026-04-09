@@ -12,14 +12,14 @@ AI精算助手 — 基于中国人身保险业经验生命表（2025）& IFRS 17
 
 ## 技术栈
 
-React 18 + Vite + Recharts + Express + Claude API
+React 18 + Vite + Recharts + Express + OpenAI API (GPT-4o)
 
 ## Railway 部署
 
 1. 将本项目推送到 GitHub
 2. 在 Railway 中创建新项目，连接 GitHub 仓库
 3. 在 Railway 的 Variables 中添加环境变量：
-   - `ANTHROPIC_API_KEY` = 你的 Anthropic API Key
+   - `OPENAI_API_KEY` = 你的 OpenAI API Key
 4. Railway 会自动检测 nixpacks.toml，执行 build 和 start
 5. 部署完成后访问分配的域名即可
 
@@ -32,10 +32,10 @@ npm run build      # 构建
 npm start          # 生产模式 (localhost:3000)
 ```
 
-需要设置环境变量 `ANTHROPIC_API_KEY` 才能使用 AI 问答功能。
+需要设置环境变量 `OPENAI_API_KEY` 才能使用 AI 问答功能。
 
 ## 注意
 
-- AI 问答功能需要 Anthropic API Key（付费），不设置也不影响其他模块使用
+- AI 问答功能需要 OpenAI API Key（付费），不设置也不影响其他模块使用
 - 所有精算计算均在前端完成，无需后端依赖
 - 生命表数据已内嵌在前端代码中

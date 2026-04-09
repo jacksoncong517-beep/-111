@@ -1191,7 +1191,7 @@ export default function App() {
 
       {/* Footer */}
       <div style={{ textAlign: "center", padding: "24px", color: theme.textDim, fontSize: 11, borderTop: `1px solid ${theme.border}` }}>
-        数据来源：中国人身保险业经验生命表（2025）· IFRS 17 Insurance Contracts · Powered by Claude API
+        数据来源：中国人身保险业经验生命表（2025）· IFRS 17 Insurance Contracts · Powered by GPT-4o
       </div>
     </div>
   );
